@@ -1,0 +1,11 @@
+Based on the information in your dataframe, here are some tables you could create:
+
+Book Table: This table would contain information about each book, such as the bookID, title, average_rating, num_pages, ratings_count, text_reviews_count, publication_date, publisher, language_name, author, and genre.
+
+Author Table: This table would contain information about each author, such as their name, bio, and any other relevant information.
+
+Genre Table: This table would contain information about each genre, such as the genreID, name, description, and any other relevant information.
+
+Publisher Table: This table would contain information about each publisher, such as the publisherID, name, location, and any other relevant information.
+
+You could also create additional tables based on your specific needs, such as a customer table if you have information about the customers who purchased the books or a sales table if you have information about the sales of the books.
