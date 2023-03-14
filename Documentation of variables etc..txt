@@ -1,3 +1,0 @@
-DOCUMENTATION
-
-df_pub: is the cleaned version of publishers just before EDA.

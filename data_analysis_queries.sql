@@ -1,9 +1,10 @@
 USE books_project;
 
-# Books with most pages.
+# Top 10 books with most pages.
+
 SELECT bookID, title, num_pages FROM books
 ORDER BY num_pages DESC
-LIMIT 10;
+LIMIT 5;
 
 # Who wrote the most books ?
 SELECT COUNT(title) AS book_count, author_name 
@@ -14,7 +15,7 @@ GROUP BY a.author_name
 ORDER BY book_count DESC;
 
 # How many books without a genre are there ?
-SELECT COUNT(genre_name) AS books_without_genre
+SELECT COUNT(genre_name) AS books_without_genre_percentage
 FROM genres g
 	INNER JOIN book_genres bg ON g.genreID=bg.genreID
 	INNER JOIN books b ON b.bookID=bg.bookID
