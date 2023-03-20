@@ -19,4 +19,6 @@ books: Original csv file downloaded from Kaggle.
 df_final: Export of final data cleaned in Python 
 
 ### Example visualizations from the project that can also be found in the detailed report;
+![Screenshot](average_rating_correlation.png)
+![Screenshot](publication_year.png)
 ![Screenshot](top10publishers.png)
