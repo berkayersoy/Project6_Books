@@ -17,3 +17,6 @@ database_creation_sql: SQL file for database creation sql code.
 books: Original csv file downloaded from Kaggle.
 
 df_final: Export of final data cleaned in Python 
+
+### Example visualizations from the project that can also be found in the detailed report;
+![Screenshot](top10publishers.png)
