@@ -1,0 +1,39 @@
+Accuracy is the proportion of correctly classified books out of all the books in the dataset. In other words, it measures how often the model is correct. A high accuracy score indicates that the model is making correct predictions more often than not.
+
+Precision is the proportion of correctly classified books of a particular genre out of all the books that the model classified as that genre. In other words, it measures how often the model correctly identifies a book as a particular genre when it is indeed that genre. A high precision score indicates that the model is accurate in its classification of a particular genre.
+
+Recall is the proportion of correctly classified books of a particular genre out of all the books that are actually that genre. In other words, it measures how often the model is able to correctly identify a book as a particular genre when it should be classified as such. A high recall score indicates that the model is able to correctly identify a book as a particular genre when it is indeed that genre.
+
+When evaluating a classification model, it is important to consider both precision and recall together. A model that has high precision but low recall will be accurate when it makes a prediction, but it will miss many relevant instances. Conversely, a model with high recall but low precision will identify many relevant instances, but it will also make many false predictions.
+
+In the context of guessing book genres from book descriptions, we would want a model with high accuracy, precision, and recall scores. A high accuracy score indicates that the model is making correct predictions more often than not, while high precision and recall scores indicate that the model is able to correctly identify books of a particular genre and not miss relevant instances.
+
+
+
+
+
+------------ Classification report
+
+Sure! In the context of classification models for guessing book genres from book descriptions, the f1-score and support are two additional metrics provided by the classification report.
+
+F1-score is the harmonic mean of precision and recall, where precision and recall are equally weighted. It is a measure of the model's accuracy and balance between precision and recall. A high F1-score indicates that the model has both high precision and recall.
+
+Support is the number of samples in each class. In this case, it is the number of books in each genre. This metric is useful because it tells us how many samples the model used to calculate precision, recall, and F1-score for each class. It also helps to identify imbalanced datasets, where some classes have significantly fewer samples than others.
+
+For example, suppose the classification report shows the following results:
+
+markdown
+Copy code
+               precision    recall  f1-score   support
+
+      Mystery       0.80      0.85      0.83       100
+      Romance       0.75      0.68      0.71        50
+     Thriller       0.82      0.79      0.80        80
+
+    micro avg       0.79      0.79      0.79       230
+    macro avg       0.79      0.77      0.78       230
+ weighted avg       0.79      0.79      0.79       230
+
+Here, we can see that the model has the highest precision and recall for the Mystery genre, with an F1-score of 0.83. The support for this class is 100, meaning that the model used 100 samples from the Mystery genre to calculate its precision, recall, and F1-score.
+
+Similarly, we can see that the Romance genre has the lowest F1-score of 0.71, and the lowest support of only 50 samples. This suggests that the model may have difficulty correctly classifying books in the Romance genre, possibly due to the small number of samples available for that genre.
